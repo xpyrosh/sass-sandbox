@@ -11,3 +11,40 @@ body {
     font-family: $font-stack;
     line-height: 1.5;
 }
+
+header {
+    background: $dark-color;
+    color: $light-color;
+    padding: 1rem;
+
+    // Sass Nesting
+    h1 {
+        text-align: center;
+    }
+}
+
+.section {
+    padding: 3rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    // & Represents parent selector (in this case .section)
+    &-a {
+        background: $primary-color;
+        color: white;
+    }
+    &-b {
+        background: $secondary-color;
+        color: white;
+    }
+}
+
+a {
+    color: #333;
+
+    &:hover {
+        color: coral;
+    }
+}
